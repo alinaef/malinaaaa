@@ -1,0 +1,587 @@
+body {
+    font-family: 'century gothic', serif;
+    margin: 0;
+    background-color: #FFFFFF; 
+    color: #9F9F9F; 
+}
+
+header {
+    background-color: #F6DBE8; 
+    padding: 20px;
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+}
+
+p, div, span, a, li, ul, ol, table, tr, td, th { 
+   font-family: 'century gothic', serif;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 160px; 
+    margin-right: 10px;
+}
+
+.logo h1 {
+    color: #E53F8F; 
+    margin: 0;
+}
+
+nav {
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+}
+
+nav a {
+    color: #9F9F9F; 
+    text-decoration: none;
+margin: 0 10px;
+font-size: 23px;
+}
+
+nav a:hover {
+    color: #E53F8F; 
+}
+
+main {
+    padding: 20px;
+}
+
+.hero {
+    text-align: center;
+    padding: 50px 0;
+margin-bottom: 90px;
+}
+
+.hero h2 {
+    color: #E53F8F; /* E53F8F */
+    margin: 0;
+}
+
+.hero-content {
+    display: flex;
+    align-items: center; /* Выравнивание по вертикали */
+    justify-content: center; /* Выравнивание по горизонтали */
+    margin-bottom: 50px; /* Отступ перед кнопкой */
+    position: relative; /* Чтобы подложка была относительно этого блока */
+}
+
+.hero-text {
+    flex: 1; /* Занимает доступное место слева */
+    text-align: left; /* Выравнивание текста слева */
+    padding-right: 20px; /* Отступ между текстом и изображением */
+}
+
+
+.hero-image img {
+    max-width: 100%; /* Адаптивность изображения */
+    height: auto;
+    max-height: 300px; /* Ограничение высоты изображения */
+    display: block; /* Убирает отступ снизу */
+    margin: 0 auto; /* Центрирование по горизонтали */
+
+}
+
+.hero h2 {
+    color: #E53F8F;
+    font-size: 2.5em; /* Увеличен размер текста */
+    margin-bottom: 10px; /* Добавлен отступ снизу */
+}
+
+.hero-text p {
+    color: #000000; /* Черный цвет текста */
+    font-size: 1.4em;
+    line-height: 2;
+    text-align: center; 
+    max-width: 110%;  /* Задайте максимальную ширину */
+padding-left: 40px;
+}
+
+.hero-image {
+  flex: 1;
+  text-align: center;
+  margin-left: auto; /* добавляем автоматический левый отступ */
+}
+
+.hero-content::before {
+    content: "";
+    position: absolute;
+    bottom: -9px; /* Смещение подложки вниз */
+    left: 0;
+    width: 100%;
+    height: 390px; /* Высота подложки */
+    background-color: #F6DBE8; 
+    z-index: -1; /* Размещение под текстом и картинкой */
+border-radius: 15px;
+}
+
+.button {
+    background-color: #E53F8F;
+    color: #FFFFFF;
+    padding: 25px 50px; /* Увеличен размер кнопки */
+    font-size: 25px; /* Увеличен размер шрифта */
+    text-decoration: none;
+    border-radius: 25px; /* Сделана более круглой */
+    border: none; /* Убрана обводка (если есть) */
+    cursor: pointer; /* Изменен курсор при наведении */
+    transition: background-color 0.3s ease; 
+}
+
+.button:hover {
+    background-color: #9F9F9F;
+}
+
+.main-image {
+    text-align: center; /* Выравнивание по центру */
+    margin-top: 40px; /* Отступ сверху */
+margin-bottom: 80px;
+}
+
+.main-image img {
+    max-width: 65%; /* Адаптивность изображения */
+    height: auto;
+    margin: 0 auto; /* Центрирование изображения */
+}
+
+.registration-form form {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+}
+
+.registration-form label {
+    margin-top: 10px;
+}
+
+.registration-form input,
+.registration-form select {
+    padding: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #9F9F9F; 
+    border-radius: 5px;
+}
+
+.registration-form button {
+    background-color: #E53F8F; 
+    color: #FFFFFF; 
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.registration-form button:hover {
+    background-color: #9F9F9F; 
+}
+
+footer {
+    background-color: #F6DBE8; 
+    text-align: center;
+    padding: 10px;
+    position: fixed; 
+    bottom: 0; 
+    width: 100%; 
+}
+
+.about-title {
+    color: #000000; /* Черный цвет */
+    font-size: 2em; /* Увеличенный размер */
+    text-align: center; /* По центру */
+    margin-bottom: 20px;
+}
+
+.about-description {
+    text-align: center; /* Выравнивание текста описания по центру */
+    color: #9F9F9F;;     font-size: 1.1em;
+    margin-bottom: 30px; /* Отступ перед картинкой и текстом */
+    padding: 0 20px; /* Добавим отступ справа и слева, чтобы текст не прилипал к краям */
+}
+
+.about-content {
+    display: flex; /* Используем flexbox для расположения картинки и текста */
+    align-items: center; /* Выравнивание по вертикали */
+justify-content: center;
+    margin-top: 20px;
+}
+
+.about-image {
+    width: 30%; /* Занимает 30% ширины */
+    margin-right: 20px;
+text-align: right; 
+}
+
+.about-image img {
+    max-width: 100%; /* Адаптивность картинки */
+    height: auto; 
+margin: 0 auto;
+}
+
+.about-text {
+    width: 40%; /* Занимает 60% ширины */
+}
+
+.about-text ul {
+    list-style: none; 
+    padding: 0;
+text-align: left;
+}
+
+.about-text li {
+    color: #000000; /* Черный цвет */
+    margin-bottom: 10px;
+    font-size: 25px; /* Увеличенный размер текста пунктов */
+}
+
+.about-button {
+    text-align: center; /* Центрируем кнопку */
+    margin-top: 30px; /* Добавляем отступ сверху */
+}
+
+.about-photos-title {
+    color: #000000;
+    font-size: 2em;
+    text-align: center;
+    margin-top: 40px; /* Отступ от кнопки */
+    margin-bottom: 20px;
+}
+
+.about-photos {
+    display: flex;
+    justify-content: center; /* Центрирование картинок */
+    align-items: center;
+    margin-bottom: 100px; /* Увеличен отступ перед подвалом */
+}
+
+.about-photos img {
+    max-width: 35%; /* Уменьшен размер картинок */
+    height: auto;
+    margin: 0 20px; /* Увеличен отступ между картинками */
+    display: block; /* Убирает лишний отступ снизу */
+}
+
+
+
+.contacts {
+    text-align: center; 
+}
+
+.contacts-title {
+    color: #000000; 
+    font-size: 2em;
+    margin-bottom: 30px;
+}
+
+.contacts-container {
+    background-color: #F6DBE8; 
+    border-radius: 15px; 
+    padding: 20px;
+    display: inline-block; 
+text-align: center; 
+    margin-bottom: 30px;
+}
+
+.contacts-container p {
+    margin-bottom: 10px;
+    color: #9F9F9F;
+font-size: 21px;
+}
+
+.contacts-button {
+    margin-top: 20px;
+}
+
+.social-links {
+    margin-top: 50px;
+    font-size: 1.1em;
+    color: #000000; /* Серый цвет текста */
+}
+
+.social-links a {
+    color: #E53F8F; 
+    text-decoration: none; 
+    margin: 0 8px; /* Отступ между ссылками */
+}
+
+.social-links a:hover {
+    text-decoration: underline; 
+}
+
+.address {
+    text-align: center; 
+margin-bottom: 100px;
+}
+
+.address-title {
+    color: #000000; 
+    font-size: 2em;
+    margin-bottom: 30px;
+}
+
+.address-text {
+    color: #E53F8F; 
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.address-text i {
+    margin-right: 10px; 
+}
+
+.map-link {
+    display: block; 
+    color: #9F9F9F; 
+    text-decoration: none; 
+    margin-bottom: 20px; /* Отступ перед картинкой */
+}
+
+.map-link:hover {
+    text-decoration: underline; /* Подчеркивание при наведении */
+}
+
+.address-map {
+    margin-top: 20px;
+}
+
+.address-map img {
+    max-width: 60%; 
+    height: auto;
+    display: block; 
+    margin: 0 auto; 
+}
+
+
+.registration {
+    text-align: center;
+    padding: 20px;
+}
+
+.registration-title {
+    color: #000000;
+    font-size: 2.5em;
+    margin-bottom: 30px;
+}
+
+.registration form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 70%; 
+    margin: 0 auto; 
+}
+
+.form-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    width: 100%;
+flex-direction: column;
+}
+
+.registration label {
+    width: auto; 
+    margin-right: 0px;
+text-align: center;
+margin-bottom: 5px;
+
+}
+
+.registration input[type="text"],
+.registration input[type="tel"],
+.registration input[type="email"],
+.registration input[type="date"],
+.registration input[type="time"],
+.registration select {
+    width: 300px; /* Увеличиваем ширину полей */
+    padding: 5px;
+    border: none; /* Убираем границу */
+    border-radius: 4px;
+    box-sizing: border-box;
+    background-color: #ffe4f2; /* Розовый цвет фона */
+    color:#E53F8F
+}
+
+.registration input[type="submit"] {
+    background-color: #E53F8F;
+    color: #FFFFFF;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    font-size: 1em;
+    margin-top: 20px;
+    align-self: center;
+}
+
+.registration input[type="submit"]:hover {
+    background-color: #9F9F9F;
+}
+
+.profile {
+    text-align: center; 
+    padding: 20px;
+}
+
+.profile-title {
+    color: #000000; /* Черный цвет */
+    font-size: 2.5em; /* Увеличенный размер */
+    margin-bottom: 30px;
+}
+
+.profile form {
+    display: flex; /* Используем flexbox */
+    flex-direction: column; /* Располагаем элементы формы в колонку */
+    align-items: center; /* Выравниваем элементы по центру */
+    width: 70%; /* Ширина формы */
+    margin: 0 auto; /* Центрируем форму по горизонтали */
+}
+
+.form-group {
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+.profile label {
+    width: auto; /* Убираем фиксированную ширину */
+    text-align: center; /* Выравниваем текст label по центру */
+    margin-right: 0; /* Убираем отступ справа */
+    margin-bottom: 5px; /* Небольшой отступ, чтобы отделить label от input */
+}
+
+.profile input[type="text"],
+.profile input[type="tel"],
+.profile input[type="email"],
+.profile input[type="password"],
+.profile input[type="date"],
+.profile input[type="time"],
+.profile select {
+    width: 400px;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    box-sizing: border-box;
+    background-color: #ffe4f2;
+    color: #E53F8F;
+}
+
+.profile input[type="file"] {
+    margin-top: 5px;
+}
+
+.profile input[type="submit"] {
+    background-color: #E53F8F;
+    color: #FFFFFF;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 15px;
+    border: none;
+    cursor: pointer;
+    font-size: 1.2em;
+    margin-top: 20px;
+    width: 250px;
+}
+
+.profile input[type="submit"]:hover {
+    background-color: #9F9F9F;
+}
+
+.site-footer {
+    background-color: #F6DBE8;
+    padding: 20px 0;
+    text-align: center;
+    margin-top: 50px;
+    position: relative; /* Важно: относительное позиционирование */
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    /* display: none;  Скрываем подвал изначально */
+}
+
+/*
+body:has(#content) {
+    margin-bottom: 100px;
+}
+*/
+
+.site-footer {
+    background-color: #F6DBE8;
+    padding: 20px 0;
+    text-align: center;
+    margin-top: 50px;
+    position: relative;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: center; 
+    align-items: flex-start; 
+    margin-bottom: 20px; 
+}
+
+.footer-column {
+    width: 30%;
+    text-align: left;
+    margin: 0 20px;
+}
+
+.footer-column h3 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-column li {
+    margin-bottom: 5px;
+}
+
+.footer-column a {
+    color: #555;
+    text-decoration: none;
+}
+
+.footer-logo {
+    text-align: center; 
+}
+
+.footer-logo img {
+   max-width: 100px; 
+    height: auto;
+}
+
+.site-footer p {
+    margin-top: 20px;
+    font-size: 0.9em;
+    color: #777;
+}
+/* Дополнительные стили для адаптивности (по желанию) */
+@media (max-width: 600px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav {
+        margin-top: 10px;
+    }
+
+    nav a {
+        margin: 0 10px;
+    }
+}
